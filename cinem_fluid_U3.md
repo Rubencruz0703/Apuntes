@@ -1,62 +1,77 @@
-Para estudiar detalladamente los archivos proporcionados sobre Cinemática de los Fluidos, he diseñado la siguiente guía estructurada. Esta guía te permitirá avanzar desde los conceptos fundamentales hasta las aplicaciones matemáticas más complejas.
-1. Fundamentos y Enfoques de Estudio
+🎙️ Audio generado por IA para entenderlo más a lo criollo
+
+[🔗 Enlace al audio en Dropbox](https://www.dropbox.com/scl/fi/li4eu816qgc2o7e73ottx/La_coreograf-a_geom-trica_de_los_fluidos.m4a?rlkey=6bpx515pv8fjkuh5v39dt8ajj&st=1laikmal&dl=0)
+
+### Fundamentos y Enfoques de Estudio
 Lo primero es comprender qué estudia la cinemática de fluidos: el movimiento sin considerar las causas (fuerzas) que lo producen, centrándose en trayectorias, velocidades y aceleraciones.
     
-    Método de Lagrange: Se enfoca en seguir a una partícula individual a lo largo de su trayectoria en el tiempo. Es útil para estudios de dispersión de contaminantes o dinámicas de gases en motores.
+Método de Lagrange: Se enfoca en seguir a una partícula individual a lo largo de su trayectoria en el tiempo. Es útil para estudios de dispersión de contaminantes o dinámicas de gases en motores.
     
-    Método de Euler: Se centra en puntos fijos del espacio (volumen de control) por donde pasa el fluido. Es el más usado en ingeniería para analizar válvulas, orificios y cañerías.
+Método de Euler: Se centra en puntos fijos del espacio (volumen de control) por donde pasa el fluido. Es el más usado en ingeniería para analizar válvulas, orificios y cañerías.
     
-    Conceptos Clave: Diferenciar entre un Sistema Fluido (masa específica con contornos deformables) y un Volumen de Control (región fija en el espacio).
+Conceptos Clave: Diferenciar entre un Sistema Fluido (masa específica con contornos deformables) y un Volumen de Control (región fija en el espacio).
     
-    Teorema de Euler: Estudia la relación entre el sistema y el volumen de control para analizar propiedades que varían en el tiempo.
+Teorema de Euler: Estudia la relación entre el sistema y el volumen de control para analizar propiedades que varían en el tiempo.
 
-2. Clasificación de los Flujos
+### Clasificación de los Flujos
 Es vital saber categorizar el movimiento del fluido para aplicar las ecuaciones correctas:
     
-    Ideal vs. Real: El flujo ideal ignora la viscosidad; el real la considera.
+Ideal vs. Real: El flujo ideal ignora la viscosidad; el real la considera.
     
-    Compresible vs. Incompresible: Variación o constancia de la densidad (típico de gases vs. líquidos).
+Compresible vs. Incompresible: Variación o constancia de la densidad (típico de gases vs. líquidos).
     
-    Estacionario vs. No Estacionario: Si las propiedades en un punto varían o no con el tiempo.
+Estacionario vs. No Estacionario: Si las propiedades en un punto varían o no con el tiempo.
     
-    Rotacional vs. Irrotacional: Depende de si las partículas del fluido rotan sobre su propio eje.
+Rotacional vs. Irrotacional: Depende de si las partículas del fluido rotan sobre su propio eje.
     
-    Régimen de flujo (Número de Reynolds): Estudia la Experiencia de Reynolds.
+Régimen de flujo (Número de Reynolds): Estudia la Experiencia de Reynolds.
     
-    Laminar ($Re < 2000$): Capas paralelas sin mezcla transversal.
+Laminar ($Re < 2000$): Capas paralelas sin mezcla transversal.
     
-    Turbulento ($Re > 4000$): Movimiento desordenado con remolinos y mezcla.
+Turbulento ($Re > 4000$): Movimiento desordenado con remolinos y mezcla.
 
-3. Ecuaciones Fundamentales del Movimiento
+### Ecuaciones Fundamentales del Movimiento
 Ecuación de Continuidad: Es la expresión matemática del principio de conservación de la masa. Debes saber aplicarla tanto en su forma integral para tuberías ($A_1V_1 = A_2V_2$ para incompresibles) como en su forma diferencial vectorial ($\text{div } V = 0$).
     
-    Aceleración: Comprender que tiene dos componentes:
+Aceleración: Comprender que tiene dos componentes:
     
-    Local: Variación de la velocidad con el tiempo en un punto.
+Local: Variación de la velocidad con el tiempo en un punto.
     
-    Convectiva: Variación de la velocidad por el cambio de posición (traslación), dividida en tangencial (cambio en módulo) y normal (cambio en dirección).
+Convectiva: Variación de la velocidad por el cambio de posición (traslación), dividida en tangencial (cambio en módulo) y normal (cambio en dirección).
     
-    Relación Presión-Aceleración: Analizar cómo el gradiente de presión genera aceleración en fluidos ideales.
+Relación Presión-Aceleración: Analizar cómo el gradiente de presión genera aceleración en fluidos ideales.
 
-4. Herramientas Matemáticas de Campo (Flujo Potencial)
+### Herramientas Matemáticas de Campo (Flujo Potencial)
 Para flujos irrotacionales e incompresibles, se utilizan funciones escalares que facilitan el cálculo de velocidades:
+
 Función Potencial ($\phi$): Su gradiente da el vector velocidad. Solo existe en flujos irrotacionales.
+
 Función de Corriente ($\psi$): Se basa en la continuidad. Es constante a lo largo de una línea de corriente.
+
 Red de Corriente: El conjunto de líneas de corriente ($\psi$) y líneas equipotenciales ($\phi$), las cuales son siempre perpendiculares entre sí.
+
 Circulación ($\Gamma$): Integral de línea del vector velocidad a lo largo de una curva cerrada; define si un movimiento es rotacional o no.
-5. Flujos Elementales y Superposición
+
+### Flujos Elementales y Superposición
 Finalmente, estudia cómo se combinan flujos simples para modelar situaciones reales:
+
 Flujos Básicos: Corriente uniforme, fuentes y sumideros, y el vórtice (diferenciando entre vórtice libre e irrotacional y vórtice forzado o de sólido rígido).
-Superposiciones Famosas:
+
+#### Superposiciones Famosas:
 Dipolo: Fuente + Sumidero.
+
 Cuerpo de Rankine: Corriente uniforme + Fuente.
+
 Flujo alrededor de un cilindro: Corriente uniforme + Dipolo.
-Acciones recomendadas:
+
+### Acciones recomendadas:
 Realiza ejercicios de cálculo de caudal másico y volumétrico usando las fórmulas de área y velocidad.
-Practica la deducción de componentes de velocidad $(u, v)$ a partir de las funciones $\phi$ y $\psi$.
+
+Practica la deducción de componentes de velocidad $(u, v)$ a partir de las funciones $\phi$ y $\psi$.{
+
 Diferencia visualmente las gráficas de un vórtice libre (hiperboloidal) frente a uno forzado (parabólico).
 
-Guía de Estudio: Cinemática de los Fluidos
+# Guía de Estudio: Cinemática de los Fluidos
 
 Esta guía de estudio ha sido diseñada para facilitar la revisión y comprensión de los conceptos fundamentales de la cinemática de fluidos, basándose exclusivamente en el material técnico proporcionado. El contenido abarca desde los métodos de análisis hasta la modelización matemática de flujos complejos.
 
@@ -102,7 +117,7 @@ Clave de Respuestas
 
 Temas de Ensayo Sugeridos
 
-Instrucciones: Desarrolle una exposición detallada para cada uno de los siguientes temas (no se proporcionan respuestas).
+Instrucciones: Debatir con compañeros las siguientes temáticas
 
 1. Análisis comparativo de las aplicaciones prácticas de los métodos de Lagrange y Euler: Discuta en qué escenarios específicos de la ingeniería (como el seguimiento de mareas negras o el diseño de válvulas) es preferible un método sobre el otro, justificando su elección en la naturaleza del problema.
 2. La importancia de la Ecuación de Continuidad en la mecánica de fluidos: Explique la derivación de la ecuación de continuidad para flujos compresibles e incompresibles y su relevancia para garantizar la conservación de la masa en sistemas de tuberías y boquillas.

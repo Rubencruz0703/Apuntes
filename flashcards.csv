@@ -1,65 +1,80 @@
-¿De qué se encarga la cinemática de los fluidos?,"Trata del movimiento de los fluidos (trayectorias, velocidades y aceleraciones) sin considerar las causas que lo originan."
-¿En qué consiste el método de Lagrange para el estudio de fluidos?,Consiste en seguir a una partícula individual de fluido a lo largo de su trayectoria para analizar cómo varían sus propiedades en el tiempo.
-¿Qué define al método de Euler en la mecánica de fluidos?,Define variables de campo en un volumen de control fijo en el espacio por donde el fluido ingresa y egresa.
-Mencione una aplicación práctica del método de Lagrange.,Se utiliza para el seguimiento de rastro de contaminantes o mareas negras en cuerpos de agua.
-¿Cuándo es preferible utilizar el método de Euler?,"Es ideal para estudiar el comportamiento del fluido en límites físicos definidos, como válvulas, orificios o secciones de cañería."
-Concepto: Sistema fluido,Definición: Una masa específica de fluido contenida dentro de contornos definidos por una superficie cerrada que puede cambiar de forma con el tiempo.
-Concepto: Volumen de control,"Definición: Un espacio definido y arbitrario que no se mueve ni cambia de forma, limitado por una superficie de control."
-¿Cómo se denomina matemáticamente a la relación entre un sistema y un volumen de control?,Se conoce como el teorema de Euler o teorema de transporte de Reynolds.
-¿Qué es un flujo ideal?,"Es aquel flujo en el que se desprecia la viscosidad del fluido, eliminando efectos viscosos y de frontera."
-¿Cuál es la característica principal de un flujo incompresible?,Se considera que la densidad del fluido permanece constante durante el movimiento.
-"En un flujo estacionario, las propiedades del fluido en cada punto _____ con el tiempo.",no varían
-"Si las propiedades del fluido en un punto varían con el tiempo, el flujo se define como _____.",no estacionario
-¿Qué condición matemática define a un flujo estacionario respecto a la presión ($P$)?,$\frac{\partial P}{\partial t} = 0$
-¿Qué define a un flujo uniforme en canales abiertos?,La forma y dimensiones de la sección transversal del flujo se mantienen constantes a lo largo del recorrido.
-¿Qué es un flujo supersónico?,Es aquel donde la velocidad del fluido es superior a la velocidad de una onda de compresión o celeridad.
-¿Cómo se desplaza el fluido en un flujo laminar?,El fluido se mueve en capas longitudinales y paralelas que se deslizan unas sobre otras sin mezcla transversal.
-¿Qué caracteriza al flujo turbulento según la experiencia de Reynolds?,Existe una componente de velocidad transversal que produce la mezcla del fluido de forma desordenada.
-"Para el flujo en tuberías, ¿qué rango de número de Reynolds ($Re$) indica un flujo laminar?",$Re < 2000$
-"Para el flujo en tuberías, ¿qué valor de número de Reynolds ($Re$) se considera típicamente para un flujo turbulento?",$Re > 4000$
-Definición: Trayectoria,Es el lugar geométrico de los sucesivos puntos que ocupa una misma partícula de fluido en el espacio a lo largo del tiempo.
-Definición: Línea de corriente,Es una línea que en cada punto es tangente al vector velocidad del fluido en un instante determinado.
-¿Bajo qué condición coinciden la trayectoria y la línea de corriente?,Coinciden únicamente en flujos de tipo estacionario.
-¿Por qué se dice que una línea de corriente es impermeable?,"Porque al ser siempre tangente al vector velocidad, ninguna partícula de fluido puede atravesarla."
-¿Qué es un tubo de corriente?,Es una superficie formada por un conjunto de líneas de corriente que pasan por una curva cerrada.
-Fórmula: Caudal volumétrico ($Q$),$Q = A \cdot V$ (donde $A$ es el área de la sección transversal y $V$ la velocidad media).
-¿Cuál es la relación entre el caudal másico ($G$) y el caudal volumétrico ($Q$)?,$G = \rho \cdot Q$
-¿Cuáles son las unidades típicas del caudal másico en el sistema internacional?,$kg/s$
-¿Qué establece la ecuación de continuidad para un fluido incompresible en flujo estacionario?,El caudal volumétrico es constante a través de cualquier sección: $A_1 V_1 = A_2 V_2$.
-¿Cuál es la ecuación de continuidad para un flujo estacionario de fluido compresible?,$\rho_1 A_1 V_1 = \rho_2 A_2 V_2$
-La expresión vectorial $\text{div}(\rho V) = 0$ representa la ecuación de continuidad para un flujo de tipo _____.,compresible
-La condición $\text{div } V = 0$ es característica de un flujo _____.,incompresible
-¿Cómo se define la aceleración local en un campo fluido?,Es la variación de la velocidad con respecto al tiempo en un punto fijo del espacio: $\frac{\partial V}{\partial t}$.
-¿Qué es la aceleración convectiva?,Es la aceleración debida al cambio de posición de la partícula en un campo de velocidades espacialmente variable.
-La aceleración convectiva normal ($a_{CN}$) se calcula mediante la fórmula _____.,$a_{CN} = \frac{V_s^2}{r}$ (donde $r$ es el radio de curvatura).
-¿Qué condición vectorial debe cumplirse para que un flujo sea irrotacional?,El rotacional del vector velocidad debe ser nulo: $\text{rot } V = 0$.
-Concepto: Función Potencial ($\phi$),Definición: Una función escalar tal que su gradiente es igual al vector velocidad; existe solo en flujos irrotacionales.
-"En un flujo bidimensional irrotacional, la función potencial satisface la ecuación de _____, expresada como $\nabla^2 \phi = 0$.",Laplace
-Concepto: Función de corriente ($\psi$),Definición: Una función que es constante a lo largo de una línea de corriente y cuyo diferencial define el caudal entre dos líneas.
-¿Qué es una red de corriente?,Es un conjunto de líneas de corriente ($\psi = cte$) y líneas equipotenciales ($\phi = cte$) que se intersectan perpendicularmente.
-Definición: Circulación ($\Gamma$),Es la integral de línea del vector velocidad a lo largo de una curva cerrada $L$: $\Gamma = \oint V \cdot dL$.
-¿Cómo se relaciona la circulación ($\Gamma$) con la velocidad angular ($\omega$) en un círculo de radio $r$?,$\Gamma = 2 \pi \omega r^2$
-¿Qué caracteriza a un vórtice forzado?,"El fluido rota como un sólido rígido con velocidad angular constante, donde $v = \omega \cdot r$."
-¿Qué caracteriza a un vórtice libre?,Es un flujo irrotacional (excepto en el centro) donde la velocidad es inversamente proporcional al radio: $v \cdot r = k$.
-La ley de Droll para un vórtice libre establece que el producto de la velocidad por el radio es _____.,constante
-¿Qué forma geométrica describe la superficie libre de un vórtice libre?,Una hipérbola de revolución descrita por la ecuación $y = \frac{k^2}{2gr^2}$.
-¿Qué ocurre con la presión en el centro ($r \to 0$) de un vórtice libre teórico?,"La presión tiende a $-\infty$, lo cual no es físicamente posible y da lugar a un núcleo de vórtice real."
-¿Qué es una fuente puntual en dinámica de fluidos?,Un punto desde el cual el fluido fluye radialmente hacia afuera de manera uniforme en todas las direcciones.
-¿Qué es un sumidero?,Un punto hacia el cual el fluido fluye radialmente de manera uniforme desde todas las direcciones.
-¿Qué resulta de la superposición de una fuente y un sumidero de igual intensidad situados muy cerca?,Se genera un dipolo (doblete).
-¿Cómo se forma un cuerpo de Rankine infinito?,Mediante la superposición de una corriente uniforme y una fuente puntual en el origen.
-"En un flujo alrededor de un cilindro generado por un dipolo y una corriente uniforme, ¿cuál es la velocidad en los puntos de remanso?",$0$
-¿Qué fenómeno natural puede modelarse combinando un sumidero y un torbellino en el origen?,El movimiento de un tornado o el desagüe de una bañera.
-¿Qué establece la segunda ley de Newton para un flujo ideal en términos de presión y aceleración?,$-\frac{\partial P}{\partial s} = \rho \cdot a_s$
-La aceleración total de una partícula de fluido se compone de la suma de la aceleración _____ y la aceleración _____.,convectiva / local
-"En coordenadas polares para una fuente, la velocidad radial ($v_r$) es igual a $m/r$. ¿Qué representa $m$?","Representa la intensidad de la fuente, definida como $m = \frac{Q}{2\pi}$."
-¿Qué es un punto de remanso?,Es un punto en el campo fluido donde la velocidad del fluido es localmente cero.
-"En el estudio de un cilindro en un flujo uniforme, ¿a qué ángulos ($\theta$) se encuentran los puntos de remanso sobre la superficie?",$0^{\circ}$ y $180^{\circ}$
-¿Cuál es la velocidad máxima en la superficie de un cilindro inmerso en un flujo uniforme $u$?,$2u$ (ocurre a $90^{\circ}$ y $270^{\circ}$).
-¿Qué condición física se requiere para que exista la función de corriente ($\psi$)?,Solo requiere que se cumpla la ecuación de continuidad (flujo incompresible).
-"Si un flujo posee función potencial ($\phi$), ¿es necesariamente irrotacional?","Sí, la existencia de la función potencial es una consecuencia directa de la irrotacionalidad del flujo."
-¿Cómo se define el caudal volumétrico ($Q$) entre dos líneas de corriente $\psi_1$ y $\psi_2$?,Es igual a la diferencia entre los valores de las funciones de corriente: $Q = \psi_2 - \psi_1$.
-"En una red de corriente, ¿qué indica una mayor proximidad entre líneas de corriente?",Indica un aumento en la velocidad del fluido en esa región.
-¿Qué sucede con las líneas de corriente en un 'punto de separación'?,"Las líneas de corriente se alejan de la frontera sólida, dando lugar a la formación de remolinos o estelas turbulentas."
-Fórmula: Aceleración convectiva tangencial ($a_{CT}$),$a_{CT} = V_s \frac{dV_s}{ds}$
-"Para un vórtice real, ¿qué sucede en el punto de transición entre el núcleo forzado y la zona libre?",El radio de transición se encuentra donde se igualan las velocidades del modelo forzado y el modelo libre: $r = \frac{k}{\omega}$.
+# 📚 Tarjetas de Repaso: Mecánica de Fluidos
+
+Hacé clic en cada pregunta para ver la respuesta. ¡Ideal para autoevaluarse!
+
+---
+
+### 🔹 Fundamentos y Métodos
+<details>
+  <summary>¿De qué se encarga la cinemática de los fluidos?</summary>
+  Trata del movimiento de los fluidos (trayectorias, velocidades y aceleraciones) sin considerar las causas que lo originan.
+</details>
+
+<details>
+  <summary>¿En qué consiste el método de Lagrange?</summary>
+  Consiste en seguir a una partícula individual de fluido a lo largo de su trayectoria para analizar cómo varían sus propiedades en el tiempo.
+</details>
+
+<details>
+  <summary>¿Qué define al método de Euler?</summary>
+  Define variables de campo en un volumen de control fijo en el espacio por donde el fluido ingresa y egresa.
+</details>
+
+<details>
+  <summary>¿Cómo se relaciona un sistema y un volumen de control?</summary>
+  Se conoce como el teorema de Euler o Teorema de Transporte de Reynolds (TTR).
+</details>
+
+---
+
+### 🔹 Tipos de Flujo y Propiedades
+<details>
+  <summary>¿Qué es un flujo ideal?</summary>
+  Es aquel flujo en el que se desprecia la viscosidad del fluido, eliminando efectos viscosos y de rozamiento.
+</details>
+
+<details>
+  <summary>¿Qué condición física se requiere para que exista la función de corriente ($\psi$)?</summary>
+  Solo requiere que se cumpla la ecuación de continuidad (flujo incompresible).
+</details>
+
+<details>
+  <summary>Si un flujo posee función potencial ($\phi$), ¿es necesariamente irrotacional?</summary>
+  Sí, la existencia de la función potencial es una consecuencia directa de la irrotacionalidad del flujo.
+</details>
+
+<details>
+  <summary>¿Cómo se define el caudal volumétrico ($Q$) entre dos líneas de corriente?</summary>
+  Es igual a la diferencia entre los valores de las funciones de corriente: $Q = \psi_2 - \psi_1$.
+</details>
+
+---
+
+### 🔹 Dinámica y Geometría del Flujo
+<details>
+  <summary>¿Qué sucede con las líneas de corriente en un "punto de separación"?</summary>
+  Las líneas de corriente se alejan de la frontera sólida, dando lugar a la formación de remolinos o estelas turbulentas.
+</details>
+
+<details>
+  <summary>¿A qué ángulos ($\theta$) se encuentran los puntos de remanso en un cilindro con flujo uniforme?</summary>
+  Se encuentran a $0^{\circ}$ y $180^{\circ}$.
+</details>
+
+<details>
+  <summary>¿Cuál es la velocidad máxima en la superficie de un cilindro inmerso en un flujo uniforme $u$?</summary>
+  Es $2u$ (ocurre a $90^{\circ}$ y $270^{\circ}$).
+</details>
+
+<details>
+  <summary>Fórmula: Aceleración convectiva tangencial ($a_{CT}$)</summary>
+  $a_{CT} = V_s \frac{dV_s}{ds}$
+</details>
+
+<details>
+  <summary>¿Qué indica una mayor proximidad entre líneas de corriente en una red de flujo?</summary>
+  Indica un aumento en la velocidad del fluido en esa región.
+</details>
+
+---
+_Apunte generado a partir de flashcards de NotebookLM._

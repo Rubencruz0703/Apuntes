@@ -130,3 +130,58 @@ Es característico de los fluidos de Bingham. Debido al esfuerzo de corte inicia
 ### 7.3. Número de Reynolds ($Re_{PL}$)
 Se define un número de Reynolds específico para fluidos que siguen la ley de potencia para mantener una estructura similar a las ecuaciones de pérdida de carga de fluidos newtonianos, permitiendo el cálculo del factor de fricción ($f$).
 
+# Guía de Estudio: Mecánica de Fluidos No Newtonianos
+
+Esta guía ha sido diseñada para proporcionar una revisión exhaustiva de los principios de la reología y el comportamiento de los fluidos no newtonianos, basándose en los fundamentos de la viscosidad, los modelos matemáticos de flujo y las aplicaciones industriales y biológicas.
+
+---
+
+## I. Cuestionario de Repaso (Respuestas Cortas)
+
+**Instrucciones:** Responda a las siguientes preguntas utilizando la información técnica proporcionada en el material de origen. Cada respuesta debe tener una extensión de 2 a 3 oraciones.
+
+1.  ¿Cómo se define la viscosidad de un fluido y cuál es su origen físico?
+2.  ¿Cuál es la diferencia fundamental entre un fluido newtoniano y uno no newtoniano?
+3.  ¿Qué es la "viscosidad aparente" y por qué es necesaria en el estudio de fluidos no newtonianos?
+4.  Describa las características principales de un fluido pseudoplástico y mencione dos ejemplos.
+5.  ¿En qué consiste el comportamiento de un fluido dilatante y cuál es la explicación física de este fenómeno?
+6.  ¿Qué es el "esfuerzo de corte inicial" (tensión de fluencia) en los fluidos viscoplásticos?
+7.  Explique la diferencia entre los fluidos dependientes del tiempo: tixotrópicos y reopécticos.
+8.  ¿Cómo afecta la temperatura a la viscosidad en líquidos frente a los gases?
+9.  ¿Qué se entiende por "flujo pistón" en el contexto de fluidos de Bingham en tuberías?
+10. Dentro del modelo de la ley de potencia (Oswald-de Waele), ¿qué representan los parámetros $n$ y $m$?
+
+---
+
+## II. Clave de Respuestas
+
+1.  **Definición de viscosidad:** Es la medida de la resistencia de un fluido a la deformación cortante o angular. Su origen se encuentra en las fuerzas intermoleculares que actúan dentro de la sustancia.
+2.  **Diferencia fundamental:** En los fluidos newtonianos, la viscosidad es constante independientemente del gradiente de velocidad. En cambio, en los no newtonianos, la viscosidad es variable y depende de las condiciones de flujo, como el esfuerzo de corte o el tiempo.
+3.  **Viscosidad aparente:** Se define como la relación entre el esfuerzo de corte y la velocidad de corte en un punto determinado. Es necesaria porque permite aplicar la estructura de la ecuación de Newton a fluidos donde la viscosidad cambia según el gradiente de velocidad.
+4.  **Fluidos pseudoplásticos:** Son aquellos cuya viscosidad aparente disminuye al aumentar la velocidad de corte, siendo el tipo más común de fluido no newtoniano. Ejemplos típicos incluyen la mayonesa, las pinturas y las soluciones de polímeros.
+5.  **Fluidos dilatantes:** Son fluidos donde la viscosidad aumenta al incrementar la velocidad de corte. Esto ocurre frecuentemente en suspensiones concentradas donde, al agitarse, el líquido deja de lubricar todas las partículas, aumentando la fricción interna.
+6.  **Esfuerzo de corte inicial ($\tau_0$):** Es un valor mínimo de tensión que debe excederse para que el material comience a fluir. Por debajo de este umbral, el material se comporta elásticamente como un sólido.
+7.  **Tixotrópicos vs. Reopécticos:** En los fluidos tixotrópicos, la viscosidad aparente disminuye con el tiempo bajo un esfuerzo constante debido a la ruptura de uniones estructurales. En los reopécticos, sucede lo contrario, y la viscosidad aumenta con la duración del esfuerzo.
+8.  **Efecto de la temperatura:** La viscosidad disminuye al aumentar la temperatura en los líquidos, mientras que en los gases la viscosidad aumenta con el incremento de la temperatura.
+9.  **Flujo pistón:** Es un fenómeno que ocurre en la zona central de una tubería donde el esfuerzo de corte es menor al límite de fluencia del fluido. Esta zona se desplaza como un bloque sólido rodeado por un anillo de fluido que sí presenta un perfil de velocidad curvo.
+10.  **Parámetros $n$ y $m$:** El parámetro $n$ es el índice de comportamiento (determina si es pseudoplástico, newtoniano o dilatante), mientras que $m$ es el coeficiente de consistencia del fluido, un parámetro empírico de ajuste.
+
+---
+
+## III. Glosario de Términos Clave
+
+*   **Agregados de cemento:** Ejemplo de fluido dilatante cuando está húmedo, donde la viscosidad sube con la agitación.
+*   **Centipoise (cP):** Unidad de viscosidad equivalente a 0,01 Poise; la viscosidad del agua a 15 °C es de aproximadamente 1 cP.
+*   **Coeficiente de consistencia ($m$):** Parámetro experimental en la ley de potencia que indica cuán "espeso" es el fluido bajo condiciones específicas.
+*   **Esfuerzo de corte ($\tau$):** Fuerza aplicada por unidad de área tangencial a la dirección del flujo.
+*   **Fluido de Bingham:** Sustancia que requiere un esfuerzo inicial para fluir y luego presenta una relación lineal entre el esfuerzo y el gradiente de velocidad.
+*   **Fluido de Casson:** Modelo común para materiales biológicos (sangre) y pastas alimenticias, caracterizado por un comportamiento viscoplástico no lineal.
+*   **Fluido viscoelástico:** Material que muestra recuperación elástica parcial después de una deformación, combinando propiedades de fluidos ideales y sólidos elásticos.
+*   **Gradiente de velocidad ($dv/dy$):** Cambio de la velocidad del fluido con respecto a la distancia perpendicular a la dirección del flujo; también llamado velocidad de corte.
+*   **Histéresis:** Fenómeno observado en fluidos dependientes del tiempo donde la curva de esfuerzo de corte al aumentar la velocidad no coincide con la curva al disminuirla.
+*   **Índice de comportamiento ($n$):** Exponente en la ley de potencia que clasifica al fluido como pseudoplástico ($n < 1$), newtoniano ($n = 1$) o dilatante ($n > 1$).
+*   **Ley de Newton de la viscosidad:** Ecuación que establece que el esfuerzo de corte es directamente proporcional al gradiente de velocidad ($\tau = \mu \cdot dv/dy$).
+*   **Lodo rojo:** Ejemplo industrial de una suspensión residual (industria del aluminio) que presenta comportamiento dependiente del tiempo.
+*   **Número de Reynolds para fluidos no newtonianos ($Re_{PL}$):** Adaptación del número de Reynolds tradicional que utiliza parámetros de la ley de potencia para predecir regímenes de flujo.
+*   **Poise (P):** Unidad de viscosidad en el sistema CGS, equivalente a $0,10 \text{ N}\cdot\text{s}/\text{m}^2$.
+*   **Yield pseudoplastic:** Material viscoplástico que, una vez superado el esfuerzo inicial, sigue un comportamiento curvo (no lineal) en su flujo.

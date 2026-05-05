@@ -130,6 +130,94 @@ Es característico de los fluidos de Bingham. Debido al esfuerzo de corte inicia
 ### 7.3. Número de Reynolds ($Re_{PL}$)
 Se define un número de Reynolds específico para fluidos que siguen la ley de potencia para mantener una estructura similar a las ecuaciones de pérdida de carga de fluidos newtonianos, permitiendo el cálculo del factor de fricción ($f$).
 
+## 8. Número de Reynolds ($Re$) en Fluidos Newtonianos y No Newtonianos
+
+La fórmula del número de Reynolds ($Re$) varía dependiendo del tipo de fluido y la geometría del sistema. En términos generales, cuantifica la relación entre las **fuerzas de inercia** y las **fuerzas viscosas**.
+
+---
+
+### 8.1 Fluidos Newtonianos
+Para estos fluidos, la fórmula general es:
+
+$$Re = \frac{L \cdot V}{\gamma} = \frac{\rho \cdot L \cdot V}{\mu}$$
+
+**Donde:**
+*   **$\rho$**: Densidad del fluido.
+*   **$V$**: Velocidad del fluido.
+*   **$L$ (o $D$)**: Longitud característica (por ejemplo, el diámetro $D$ en una cañería o la longitud $L$ en una placa plana).
+*   **$\mu$**: Viscosidad dinámica.
+*   **$\gamma$**: Viscosidad cinemática ($\mu/\rho$).
+
+---
+
+### 8.2. Fluidos No Newtonianos
+Para fluidos que no siguen la ley de Newton de la viscosidad, se utilizan adaptaciones para mantener una estructura similar en las ecuaciones de flujo:
+
+### Modelo de Ley de Potencia (Pseudoplásticos)
+Se define un número de Reynolds específico ($Re_{PL}$):
+
+$$Re_{PL} = \frac{\rho V^{2-n} D^n}{8^{n-1} m \left(\frac{3n+1}{4n}\right)^n}$$
+
+Donde **$n$** es el índice de comportamiento y **$m$** es el coeficiente de consistencia.
+
+### Plásticos de Bingham
+Se utiliza el número de Reynolds de Bingham ($Re_B$):
+
+$$Re_B = \frac{\rho V D}{\mu_B}$$
+
+Donde **$\mu_B$** es la viscosidad plástica.
+
+### Número de Reynolds Generalizado ($Re_{MR}$)
+Utilizado para fluidos independientes del tiempo en cañerías circulares:
+
+$$Re_{MR} = \frac{\rho V^{2-n'} D^{n'}}{8^{n'-1} m'}$$
+
+Aquí, **$n'$** y **$m'$** son parámetros experimentales obtenidos de la curva de esfuerzo de corte.
+
+### Modelo de Herschel-Bulkley
+Para este modelo se utiliza una versión modificada ($Re_{mod}$):
+
+$$Re_{mod} = \frac{8 \rho V_{ann}^2}{\tau_0^H + m \left(\frac{8 V_{ann}}{D_{shear}}\right)^n}$$
+
+---
+
+### 8.3 Regímenes de Flujo
+Independientemente del fluido, el número de Reynolds determina el tipo de régimen en una cañería:
+
+*   **Laminar:** $Re < 2100$.
+*   **Transición:** $2100 < Re < 4000$.
+*   **Turbulento:** $Re > 4000$.
+
+---
+
+### 9. La Capa Límite
+La **capa límite** se define como la zona donde se manifiesta la influencia de la viscosidad del fluido [1]. En esta región, la velocidad del fluido se ve afectada por las fuerzas cortantes, variando desde cero en la pared (condición de no deslizamiento) hasta alcanzar la velocidad de la corriente libre [1, 2].
+
+### 10. Subcapa Laminar
+Incluso cuando el flujo general es **turbulento**, siempre existe una delgada **subcapa laminar** pegada a las paredes del conducto o superficie [3]. 
+
+Esta subcapa es crítica para determinar la naturaleza de la fricción:
+*   **Comportamiento liso:** Si la subcapa laminar es lo suficientemente gruesa como para cubrir las irregularidades (rugosidades) de la pared, la cañería se comporta como si fuera lisa [3].
+*   **Comportamiento rugoso:** Si las rugosidades sobresalen de esta subcapa, el conducto se considera hidráulicamente rugoso [3].
+
+### 11. La Rugosidad y su Impacto
+La rugosidad de una superficie altera significativamente la resistencia al avance del fluido.
+
+## Coeficiente de Arrastre ($C_d$)
+El impacto de la rugosidad se puede observar en el coeficiente de arrastre. Por ejemplo, para una esfera con un número de Reynolds de $10^6$:
+*   **Esfera lisa:** Presenta un $C_d$ de **0,1** [4, 5].
+*   **Esfera rugosa:** Presenta un $C_d$ mucho mayor, de **0,48** [5].
+
+## Resistencia al Movimiento
+La resistencia total que se opone al movimiento tiene dos orígenes principales relacionados con la capa límite:
+1.  **Resistencia de superficie:** Debida directamente a la existencia de la capa límite y la fricción viscosa [6].
+2.  **Resistencia de forma:** Debida al desprendimiento de la capa límite, lo que genera zonas de baja presión detrás del objeto [6].
+
+## Aplicación en Conductos
+En el diseño industrial, el uso de superficies con distintas texturas altera el flujo. Por ejemplo, el paso de burbujas de aire es diferente si se utilizan tubos de cristal **lisos** en comparación con tubos **corrugados** (rugosos) [7]. En regímenes turbulentos para fluidos no newtonianos, se suelen adaptar fórmulas como la de Darcy-Weisbach considerando las variaciones en el coeficiente de fricción provocadas por estas condiciones de superficie [8, 9].
+
+---
+
 # Guía de Estudio: Mecánica de Fluidos No Newtonianos
 
 Esta guía ha sido diseñada para proporcionar una revisión exhaustiva de los principios de la reología y el comportamiento de los fluidos no newtonianos, basándose en los fundamentos de la viscosidad, los modelos matemáticos de flujo y las aplicaciones industriales y biológicas.
